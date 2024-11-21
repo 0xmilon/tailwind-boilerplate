@@ -202,6 +202,12 @@ We follow a simplified Git flow with these main branches:
 4. Push to the branch
 5. Open a pull request
 
+## 👤 Author
+
+- **0xmilon**
+  - GitHub: [@0xmilon](https://github.com/0xmilon)
+  - Twitter: [@0xmilon](https://x.com/0xmilon)
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -215,4 +221,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ for the modern web development community.
+Made with ❤️ by [0xmilon](https://github.com/0xmilon)
