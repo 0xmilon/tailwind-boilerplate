@@ -204,7 +204,7 @@ We follow a simplified Git flow with these main branches:
 
 ## 👤 Author
 
-- **0xmilon**
+- **Milon Biswas**
   - GitHub: [@0xmilon](https://github.com/0xmilon)
   - Twitter: [@0xmilon](https://x.com/0xmilon)
 
@@ -221,4 +221,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [0xmilon](https://github.com/0xmilon)
+Made with ❤️ by [Milon Biswas](https://github.com/0xmilon)
