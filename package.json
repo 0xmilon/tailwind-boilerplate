@@ -5,21 +5,26 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
-    "format": "biome format --write ."
+    "clean": "gulp clean",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "check": "biome check --apply .",
+    "update-deps": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.15"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
-    "autoprefixer": "^10.4.17",
-    "browser-sync": "^3.0.2",
-    "cssnano": "^6.0.3",
-    "gulp": "^4.0.2",
+    "@biomejs/biome": "1.9.4",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-postcss": "^9.1.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-terser": "^2.1.0",
-    "postcss": "^8.4.33"
+    "postcss": "^8.4.49"
   }
 }

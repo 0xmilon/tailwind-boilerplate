@@ -52,28 +52,43 @@ function html() {
     .pipe(browserSync.stream());
 }
 
-// Watch files
-function watchFiles() {
+// Clean dist folder
+async function clean() {
+  const del = await import('del');
+  return del.deleteSync(['dist/**/*']);
+}
+
+// BrowserSync server
+function serve(done) {
   browserSync.init({
     server: {
       baseDir: './dist'
-    }
+    },
+    port: 3000,
+    open: true,
+    notify: false
   });
-  
+  done();
+}
+
+// Watch files
+function watchFiles(done) {
   gulp.watch(paths.css.src, css);
   gulp.watch(paths.js.src, js);
   gulp.watch([paths.html.src, paths.components, paths.layouts], html);
   gulp.watch('dist/**/*').on('change', browserSync.reload);
+  done();
 }
 
-// Define complex tasks
-const build = gulp.series(gulp.parallel(css, js), html);
-const watch = gulp.series(build, watchFiles);
+// Complex tasks
+const build = gulp.series(clean, gulp.parallel(css, js), html);
+const watch = gulp.series(build, serve, watchFiles);
 
 // Export tasks
 exports.css = css;
 exports.js = js;
 exports.html = html;
+exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
