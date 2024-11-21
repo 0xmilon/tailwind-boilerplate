@@ -1,0 +1,25 @@
+{
+  "name": "tailwind-gulp-workflow",
+  "version": "1.0.0",
+  "description": "Modern Tailwind CSS template development workflow with Gulp.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-postcss": "^9.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.33"
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@title</title>
+    <meta name="description" content="@@description">
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header Component -->
+    @@include('../components/header.html')
+
+    <!-- Main Content -->
+    <main class="container py-8">
+        @@content
+    </main>
+
+    <!-- Footer Component -->
+    @@include('../components/footer.html')
+
+    <script src="/js/app.min.js"></script>
+</body>
+</html>

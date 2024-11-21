@@ -1,0 +1,29 @@
+@@include('../layouts/base.html', {
+    "title": "Home | Modern Tailwind Template",
+    "description": "Welcome to our modern Tailwind CSS template with component-based architecture",
+    "content": `
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Our Template</h1>
+        <p class="text-xl text-gray-600 mb-8">A modern Tailwind CSS template with component-based architecture</p>
+        <div class="space-x-4">
+            <a href="/about" class="btn-primary">Learn More</a>
+            <a href="/contact" class="btn bg-gray-200 text-gray-800 hover:bg-gray-300">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">Feature 1</h2>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">Feature 2</h2>
+            <p class="text-gray-600">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">Feature 3</h2>
+            <p class="text-gray-600">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+    `
+})
