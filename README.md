@@ -141,6 +141,59 @@ The production build:
 3. Generates sourcemaps
 4. Creates production-ready files in `dist/`
 
+## 🌳 Branching Strategy
+
+We follow a simplified Git flow with these main branches:
+
+### Main Branches
+- `main` - Production-ready code
+- `develop` - Development branch, integration of features
+
+### Supporting Branches
+- `feature/*` - New features and non-emergency fixes
+- `hotfix/*` - Urgent production fixes
+- `release/*` - Release preparation
+
+### Branch Naming
+- Features: `feature/feature-name`
+- Hotfixes: `hotfix/issue-description`
+- Releases: `release/version-number`
+
+### Workflow
+1. Create feature branch from `develop`
+   ```bash
+   git checkout -b feature/new-feature develop
+   ```
+
+2. Work on the feature
+   ```bash
+   git add .
+   git commit -m "feat: add new feature"
+   ```
+
+3. Merge back into develop
+   ```bash
+   git checkout develop
+   git merge --no-ff feature/new-feature
+   ```
+
+4. Delete feature branch
+   ```bash
+   git branch -d feature/new-feature
+   ```
+
+5. Create release
+   ```bash
+   git checkout -b release/1.0.0 develop
+   ```
+
+6. Merge to main and tag
+   ```bash
+   git checkout main
+   git merge --no-ff release/1.0.0
+   git tag -a v1.0.0 -m "Version 1.0.0"
+   ```
+
 ## 🤝 Contributing
 
 1. Fork the repository
