@@ -1,95 +1,76 @@
-# Modern Tailwind CSS Template
+# Modern Tailwind CSS Boilerplate
 
-A production-ready Tailwind CSS template with component-based architecture using Gulp.js.
+A production-grade, enterprise-ready boilerplate for modern web development using Tailwind CSS, Gulp, and best practices.
 
-## Features
+## ✨ Features
 
-- 🎨 Tailwind CSS with PostCSS processing
-- 📦 Component-based architecture
-- 🔄 Live reload with BrowserSync
-- 📱 Mobile-first responsive design
-- 🎯 Semantic HTML structure
-- 🚀 Production build optimization
+- 🎨 **Modern Design System**
+  - Tailwind CSS v3.4.15
+  - Dark mode support with system preference detection
+  - Custom color schemes (neutral, slate)
+  - Typography plugin integration
+  - Responsive design patterns
 
-## Prerequisites
+- 🛠️ **Advanced Build System**
+  - Gulp 5.0.0 workflow
+  - PostCSS processing
+  - JavaScript minification
+  - CSS optimization
+  - Live reload with BrowserSync
+  - Component-based architecture
 
-- Node.js (v16 or higher)
-- npm (v7 or higher)
+- 🔧 **Development Tools**
+  - Biome JS for formatting and linting
+  - Source maps for debugging
+  - Hot module replacement
+  - NPM scripts for common tasks
+  - Automated dependency updates
 
-## Installation
+- 📦 **Production Ready**
+  - Minified assets
+  - Optimized builds
+  - Cache busting
+  - SEO friendly
+  - Performance optimized
 
-```bash
-# Clone the repository
-git clone [repository-url]
-cd tailwind-gulp-workflow
+## 🚀 Quick Start
 
-# Install dependencies
-npm install
-```
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   cd boilerplate
+   ```
 
-## Development Workflow
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-# Start development server
-npm run dev
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-# Build for production
-npm run build
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-# Format code
-npm run format
-```
-
-## Git Workflow
-
-We follow a feature branch workflow:
-
-1. Create a new branch for each feature/fix:
-```bash
-git checkout -b feature/feature-name
-git checkout -b fix/bug-fix-name
-```
-
-2. Make your changes and commit with meaningful messages:
-```bash
-git add .
-git commit -m "feat: add new feature"
-# or
-git commit -m "fix: resolve issue"
-```
-
-3. Push your branch and create a pull request:
-```bash
-git push origin feature/feature-name
-```
-
-4. After review and approval, merge into main branch
-
-## Dependency Management
-
-Keep dependencies up to date:
-
-```bash
-# Check for outdated packages
-npm outdated
-
-# Update packages
-npm update
-
-# Update major versions (careful with breaking changes)
-npx npm-check-updates -u && npm install
-```
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-tailwind-gulp-workflow/
+boilerplate/
 ├── src/                  # Source files
 │   ├── css/             # CSS files
+│   │   └── app.css      # Main CSS file
+│   ├── js/              # JavaScript files
+│   │   └── app.js       # Main JS file
 │   ├── components/      # Reusable components
-│   ├── js/             # JavaScript files
-│   ├── layouts/        # Layout templates
-│   └── pages/          # Page templates
+│   │   ├── header.html
+│   │   ├── footer.html
+│   │   └── home/        # Page-specific components
+│   └── pages/           # HTML pages
+│       └── index.html
 ├── dist/                # Compiled files
 ├── gulpfile.js         # Gulp configuration
 ├── tailwind.config.js  # Tailwind configuration
@@ -97,41 +78,88 @@ tailwind-gulp-workflow/
 └── package.json        # Project dependencies
 ```
 
-## Best Practices
+## 🎨 Customization
 
-1. **Component Development**
-   - Keep components small and focused
-   - Use semantic HTML
-   - Follow BEM naming convention for custom classes
+### Tailwind Configuration
 
-2. **CSS Management**
-   - Use Tailwind's utility classes when possible
-   - Create custom components for repeated patterns
-   - Keep custom CSS minimal
+The template includes a customized `tailwind.config.js` with:
+- Custom color schemes
+- Dark mode support
+- Typography plugin
+- Extended theme settings
 
-3. **JavaScript**
-   - Use ES6+ features
-   - Keep functions pure when possible
-   - Use meaningful variable names
+### Components
 
-4. **Version Control**
-   - Write meaningful commit messages
-   - Keep commits focused and atomic
-   - Review code before merging
+Components are modular and can be included using:
+```html
+@@include('../components/header.html')
+```
 
-5. **Performance**
-   - Optimize images before adding to the project
-   - Minimize custom JavaScript
-   - Use lazy loading for images
+### Dark Mode
 
-## Contributing
+Dark mode is implemented using Tailwind's `dark:` variant and supports:
+- System preference detection
+- Manual toggle
+- Persistent preference storage
+
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run clean` - Clean dist folder
+- `npm run format` - Format code with Biome
+- `npm run lint` - Lint code with Biome
+- `npm run check` - Run Biome checks
+- `npm run update-deps` - Update dependencies
+
+## 🔧 Development
+
+### Adding New Pages
+
+1. Create a new HTML file in `src/pages/`
+2. Include necessary components
+3. Add content between header and footer
+4. Run development server to see changes
+
+### Creating Components
+
+1. Add new component in `src/components/`
+2. Use Tailwind classes for styling
+3. Include in pages using `@@include()`
+
+### Styling
+
+- Use Tailwind utility classes
+- Add custom styles in `src/css/app.css`
+- Configure theme in `tailwind.config.js`
+
+## 📦 Production Build
+
+The production build:
+1. Minifies CSS and JavaScript
+2. Optimizes assets
+3. Generates sourcemaps
+4. Creates production-ready files in `dist/`
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch
+2. Create a feature branch
 3. Commit your changes
 4. Push to the branch
-5. Create a Pull Request
+5. Open a pull request
 
-## License
+## 📄 License
 
-MIT License - feel free to use this template for your projects.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Tailwind CSS](https://tailwindcss.com)
+- [Gulp](https://gulpjs.com)
+- [PostCSS](https://postcss.org)
+- [Biome](https://biomejs.dev)
+
+---
+
+Made with ❤️ for the modern web development community.
