@@ -1,7 +1,17 @@
 {
-  "name": "tailwind-gulp-workflow",
+  "name": "modern-tailwind-boilerplate",
   "version": "1.0.0",
-  "description": "Modern Tailwind CSS template development workflow with Gulp.js",
+  "description": "A modern, production-ready frontend workflow with Tailwind CSS and Gulp",
+  "author": "0xmilon",
+  "license": "MIT",
+  "homepage": "https://github.com/0xmilon/modern-tailwind-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xmilon/modern-tailwind-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xmilon/modern-tailwind-boilerplate/issues"
+  },
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
