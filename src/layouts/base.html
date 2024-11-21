@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@@title</title>
     <meta name="description" content="@@description">
     <link rel="stylesheet" href="/css/tailwind.min.css">
+    <script>
+        // Check if user prefers dark mode
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
-<body class="min-h-screen bg-gray-50">
+<body class="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
     <!-- Header Component -->
     @@include('../components/header.html')
 
     <!-- Main Content -->
-    <main class="container py-8">
+    <main class="container py-8 prose prose-neutral dark:prose-invert mx-auto">
         @@content
     </main>
 
