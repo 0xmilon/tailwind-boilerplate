@@ -1,16 +1,16 @@
 {
-  "name": "modern-tailwind-boilerplate",
+  "name": "tailwind-boilerplate",
   "version": "1.0.0",
   "description": "A modern, production-ready frontend workflow with Tailwind CSS and Gulp",
   "author": "0xmilon",
   "license": "MIT",
-  "homepage": "https://github.com/0xmilon/modern-tailwind-boilerplate",
+  "homepage": "https://github.com/0xmilon/tailwind-boilerplate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xmilon/modern-tailwind-boilerplate.git"
+    "url": "git+https://github.com/0xmilon/tailwind-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/0xmilon/modern-tailwind-boilerplate/issues"
+    "url": "https://github.com/0xmilon/tailwind-boilerplate/issues"
   },
   "scripts": {
     "dev": "gulp",
