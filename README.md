@@ -1,6 +1,6 @@
-# Modern Tailwind CSS Boilerplate
+# 🚀 Tailwind Boilerplate
 
-A production-grade, enterprise-ready boilerplate for modern web development using Tailwind CSS, Gulp, and best practices.
+A modern, production-ready frontend workflow with Tailwind CSS and Gulp.
 
 ## ✨ Features
 
